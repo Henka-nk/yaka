@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yakarouler</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+
+    <body>
+        <!--Logo, menu-->
+        <header>
+            <img src="img/burger.png" alt="burger" class="menuBurger">
+            <h1><img src="img/Logo.png" alt="logo" class="logo  "></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href=""><i class="flaticon-customer-service-headset"></i> Aide<br/>
+                        <span class="numTel">01 70 44 75 75</span></a>
+
+                    </li>
+                    <li>
+                        <a href=""><i class="flaticon-location"></i> Magasins</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="flaticon-user-shape"></i> Identification</a>
+                    </li>
+                    <li>
+                        <p class="panier"><i class="flaticon-shopping-cart-black-shape"></i> Panier (0)</p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="container">
+            <!--bloc caché. Apparait avec animation-->
+            <div id="bloc_search">
+                <div id="ongletSearch">
+                    <div class="byModele"><p>Par modèle</p></div>
+                    <div class="byImmatriculation"><p>Par immatriculation</p></div>
+                    <div class="byCarteGrise"><p>Par carte grise</p></div>
+                </div>
+                <div id="content">
+
+                </div>
+            </div>
+
+            <!--Grande Image-->
+            <div id="textPresentation">
+                <h2>Vos pièces détachées</h2>
+                <p>garanties qualité constructeur au meilleur prix</p>
+            </div>
+
+            <!--Barre de recherche-->
+            <div id="searchContainer">
+                <div id="selectionVehicule">
+                    <div>
+                        <p>Sélectionner un véhicule</p>
+                    </div>
+                </div>
+                <div id="searchInputContainer">
+                    <input type="text" class="inputSearch" placeholder="Cherchez une pièce, une référence ...">
+                    <button><i class="flaticon-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Centrage du contenu-->
+        <div id="bloc_centrage">
+
+            <!--Publicité-->
+            <div id="pub">
+                <a href=""><div id="pub1"><img src="img/pub_livraison_desktop.jpg" alt="pubLivraison" class="pubLivraison"></div></a>
+                <a href=""><div id="pub2"><img src="img/pub_bardahl_mobile.jpg" alt="pubBardahl" class="pubBardahl"></div></a>
+            </div>
+
+            <!--Section avec tous les produits-->
+            <section>
+                <ul>
+                    <li><a href="freinage.html"><img src="img/freinage.png" alt="freinage"><p>Freinage</p></a></li>
+                    <li><a href=""><img src="img/filtration.png" alt="filtration"><p>Filtration</p></a></li>
+                    <li><a href=""><img src="img/demarrage.png" alt="demarrage"><p>Démarrage Charge</p></a></li>
+                    <li><a href=""><img src="img/echappement.png" alt="echappement"><p>Echappement</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><img src="img/direction.png" alt="direction"><p>Direction Suspension</p></a></li>
+                    <li><a href=""><img src="img/moteur.png" alt="moteur"><p>Moteur</p></a></li>
+                    <li><a href=""><img src="img/chauffage.png" alt="chauffage"><p>Chauffage Climatisation</p></a></li>
+                    <li><a href=""><img src="img/carrosserie.png" alt="carrosserie"><p>Carrosserie</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><img src="img/visibilite.png" alt="visibilite"><p>Visibilité</p></a></li>
+                    <li><a href=""><img src="img/jante.png" alt="jante"><p>Jante Roues</p></a></li>
+                    <li><a href=""><img src="img/embrayage.png" alt="embrayage"><p>Embrayage Boite de vitesse</p></a></li>
+                    <li><a href=""><img src="img/habitacle.png" alt="habitacle"><p>Habitacle</p></a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><img src="img/outillage.png" alt="outillage"><p>Outillage</p></a></li>
+                    <li><a href=""><img src="img/acessoires.png" alt="acessoires"><p>Accessoires Portage</p></a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="etiquette">
+            <ul>
+                <li><i class="flaticon-tick"></i><a href="">Pièces neuves<br/>et d'origines</a></li>
+                <li><i class="flaticon-phone-receiver"></i><a href="">A votre<br/>écoute 7/7</a></li>
+                <li><i class="flaticon-car-compact"></i><a href="">1700 centres<br/>de montage</a></li>
+                <li><i class="flaticon-arrows"></i><a href="">Nous proposons<br/>la révision</a></li>
+                <li><i class="flaticon-buildings"></i><a href="">Magasins et<br/>ateliers physiques</a></li>
+                <li><i class="flaticon-locked-padlock"></i><a href="">Paiement<br/>sécurisé</a></li>
+            </ul>
+        </div>
+
+        <div id="partenariat">
+            <ul>
+                <li><a href=""><img src="img/partenaires/bosal.png" alt="Bossal"></a></li>
+                <li><a href=""><img src="img/partenaires/Magneti_Marelli.png" alt="Magneti"></a></li>
+                <li><a href=""><img src="img/partenaires/Brembo_logo.jpg" alt="Brembp"></a></li>
+                <li><a href=""><img src="img/partenaires/bosch.png" alt="Bosch"></a></li>
+                <li><a href=""><img src="img/partenaires/monroe.png" alt="Monroe"></a></li>
+                <li><a href=""><img src="img/partenaires/mecafilter.png" alt="Mecafilter"></a></li>
+                <li><a href=""><img src="img/partenaires/valeo.gif" alt="Valeo"></a></li>
+                <li><a href=""><img src="img/partenaires/motul.jpg" alt="Motul"></a></li>
+            </ul>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div id="footer">
+                <!--Votre Commande-->
+                <div id="votreCommande">
+                    <h4>Votre Commande</h4>
+                    <hr class="footer_hr">
+                    <ul id="contentCommande" class="clear">
+                        <li><a href="">Livraison / Retour</a></li>
+                        <li><a href="">Point Relais</a></li>
+                        <li><a href="">Paiement</a></li>
+                        <li><a href="">Suivi de commande</a></li>
+                        <li><a href="">Satisfait ou remboursé</a></li>
+                        <li><a href="">Mentions Légales</a></li>
+                        <li><a href="">Conditions générales de vente</a></li>
+                        <li><a href="">Conditions de livraison</a></li>
+                    </ul>
+                </div>
+
+                <!--Aide & Service-->
+                <div id="aideService">
+                    <h4>aides & service</h4>
+                    <hr class="footer_hr">
+                    <ul id="contentAideService" class="clear">
+                        <li><a href="">Atelier mécanique gratuit</a></li>
+                        <li><a href="">Questions / réponses</a></li>
+                        <li><a href="">Créer un compte</a></li>
+                        <li><a href="">Mon compte</a></li>
+                        <li><a href="">Parrainez vos amis</a></li>
+                        <li><a href="">Sécurité et confidentialité</a></li>
+                        <li><a href="">Connaître sa cote Argus</a></li>
+                        <li><a href="">Blog du Dico de l'auto</a></li>
+                        <li><a href="">Forum Yakarouler</a></li>
+                        <li><a href="">Diagnostic panne</a></li>
+                        <li><a href="">Tutoriels</a></li>
+                    </ul>
+                </div>
+
+                <!--A propos-->
+                <div id="aPropos">
+                    <h4>a propos de yakarouler</h4>
+                    <hr class="footer_hr">
+                    <ul id="contentAPropos" class="clear">
+                        <li><a href="">A propos de yakarouler</a></li>
+                        <li><a href="">Nous contacter</a></li>
+                        <li><a href="">Yakarouler recrute</a></li>
+                        <li><a href="">Magasin</a></li>
+                        <li><a href="">Devenez centre de montage</a></li>
+                        <li><a href="">Solidarité</a></li>
+                        <li><a href="">Avis client</a></li>
+                        <li><a href="">Donnez votre avis sur yakarouler</a></li>
+                        <li><a href="">Devenez affilié</a></li>
+                        <li><a href="">Version Mobile</a></li>
+                    </ul>
+                </div>
+
+                <!--Contact-->
+                <div id="contact">
+                    <div id="newsletter">
+                        <h4>inscription à la newsletter</h4>
+                        <input type="text" placeholder="Email">
+                        <button>OK</button>
+                    </div>
+
+                    <div id="garantiePartenaire">
+                        <h4>garage partenaire</h4>
+                        <input type="text" placeholder="Code Postal">
+                        <button>OK</button>
+                    </div>
+
+                    <div id="rejoindre">
+                        <ul>
+                            <li><a href=""><img src="img/facebook.png" alt="facebook"></a></li>
+                            <li><a href=""><img src="img/twitter.png" alt="twitter"></a></li>
+                            <li><a href=""><img src="img/googleplus.png" alt="google+"></a></li>
+                            <li><a href=""><img src="img/wordpress.png" alt="wordpress"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

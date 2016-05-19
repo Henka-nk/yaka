@@ -1,0 +1,617 @@
+/************** Icone en icomoon **************/
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+}
+
+.flaticon-arrows:before { content: "\f100"; }
+.flaticon-buildings:before { content: "\f101"; }
+.flaticon-car-compact:before { content: "\f102"; }
+.flaticon-customer-service-headset:before { content: "\f103"; }
+.flaticon-location:before { content: "\f104"; }
+.flaticon-locked-padlock:before { content: "\f105"; }
+.flaticon-phone-receiver:before { content: "\f106"; }
+.flaticon-search:before { content: "\f107"; }
+.flaticon-shopping-cart-black-shape:before { content: "\f108"; }
+.flaticon-tick:before { content: "\f109"; }
+.flaticon-travel:before { content: "\f10a"; }
+.flaticon-user-shape:before { content: "\f10b"; }
+
+
+/************************** Header Nav et Menu **************************/
+header{
+    height: 70px;
+    background-color: #f8f8f8;
+}
+
+/************************** Logo **************************/
+h1{
+    display: inline-block;
+}
+
+.logo{
+    width: 36%;
+    margin-left: 15px;
+    margin-top: 9px;
+    display: inline-block;
+}
+
+/*************************** Menu de navigation **************************/
+nav{
+    display: inline-block;
+    position: absolute;
+    right: 9px;
+    top: 16px;
+}
+
+.menuBurger{
+    display: none;
+}
+
+nav ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 75px;
+}
+
+nav li:last-child{
+    width: 100px;
+    height: 30.5px;
+    background-color: #ff6600;
+    padding: 4px;
+}
+
+/* les lien des menus de navigatin */
+nav a{
+    height: 11px;
+    font-family: Arial;
+    font-size: 0.8vw;
+    color: #ff6600;
+    text-decoration: none;
+}
+
+/* numero de telephone sur le menu */
+.numTel{
+    font-family: Arial;
+    font-size: 0.8vw;
+    color: #59595b;
+}
+
+/* Bouton orange du panier */
+.panier{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    font-size: 0.8vw;
+    font-family: 'Arial';
+}
+
+
+
+
+
+
+/************************** Tout le contenu **************************/
+#container{
+    background: url("../img/Hero.png");
+    height: 770px;
+    background-color: #d8d8d8;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+/************************** Apparition du bloc de recherche au clic **************************/
+/* Bloc de recherche */
+#bloc_search{
+    width: 55%;
+    height: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    z-index: 1;
+    display: none;
+}
+
+/* Les onglets */
+#ongletSearch{
+    width: 100%;
+    height: 20%;
+}
+
+/* forme des onglets */
+.byModele, .byImmatriculation, .byCarteGrise{
+    width: 33%;
+    height: 100%;
+    background: #ffffff;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    border-left: solid 1px #dadada;;
+    border-right: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+}
+
+.byCarteGrise{
+    width: 33.2%;
+}
+
+/* texte dans les onglets */
+#ongletSearch p{
+    margin-top: 23px;
+    font-size: 1.2vw;
+    font-family: Arial;
+}
+
+/* contenu de la recherche */
+#content{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+/*********** contneu du bloc model ***********/
+#containerModel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    width: 73%;
+}
+
+/* Liste déroulante */
+#containerModel select{
+    border: 1px solid black;
+    margin-left: 15%;
+    font-size: 1.3vw;
+    width: 31%;
+    padding: 12px;
+    margin-top: 35px;
+}
+
+#typeVehicule, #typeModele{
+    margin-left: 0;
+}
+
+
+
+
+
+
+/************************** Grande image **************************/
+#textPresentation{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    text-align: center;
+    width: 52%;
+}
+
+/* Texte central : vos pièces détachés */
+#textPresentation h2{
+    font-family: Arial;
+    font-size: 4.3vw;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    text-shadow: 1px 1.5px 12.5px rgba(0, 0, 0, 0.5);
+}
+
+#textPresentation p{
+    font-family: Arial;
+    font-size: 1.1vw;
+    margin-top: 7px;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+    text-shadow: 1px 1.5px 12.5px rgba(0, 0, 0, 0.5);
+}
+
+/************************** Barre de recherche **************************/
+#searchContainer{
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    width: 61%;
+    height: 7%;
+    /* margin-top: 45px; */
+}
+
+/* Barre de rechercher un véhicule */
+#selectionVehicule{
+    width: 49%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-right: 1px solid black;
+    float: left;
+    height: 100%;
+}
+
+#selectionVehicule div{
+    margin-top: 17px;
+    height: 25px;
+    margin-left: 40px;
+}
+
+#selectionVehicule div p{
+    font-size: 1.1vw;
+    color: #59595b;
+    font-family: Arial;
+    padding-top: 2px;
+}
+
+#selectionVehicule div p:after{
+    content: url(../img/triangle-1.png);
+    display: inline-block;
+    margin-right: 50px;
+    float: right;
+    margin-top: -4px;
+}
+
+/* champs de saisi pour la barre de recherche */
+#searchInputContainer{
+    height: 100%;
+}
+
+/* input */
+.inputSearch {
+    font-size: 0.9vw;
+    height: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: none;
+    float: left;
+    width: 31.8%;
+}
+
+/* Bouton pour valider la recherche */
+#searchInputContainer button{
+    width: 19.2%;
+    height: 100%;
+    background: #139bbd;
+    border: none;
+}
+
+
+
+
+
+
+/************************** Centrage du contenu  **************************/
+#bloc_centrage{
+    width: 75%;
+    position: relative;
+    margin: auto;
+}
+
+/************************** Pub **************************/
+#pub{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Première pub */
+#pub1{
+    margin-right: 1%;
+    width: 60.2%;
+    display: inline-block;
+}
+
+/* Seconde Pub */
+#pub2{
+    width: 37.6%;
+    display: inline-block;
+}
+
+#pub img{
+    width: 100%;
+}
+
+/************************** Section avec tous les produits **************************/
+section{
+    width: 100%;
+}
+
+section ul{
+    width: 100%;
+    margin: auto;
+    margin-top: 2%  ;
+}
+
+section ul:first-child{
+    margin-bottom: inherit;
+}
+
+section ul:last-child{
+    margin-bottom: 35px;
+}
+
+section li{
+    width: 23%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+
+section li:first-child{
+    margin-left: inherit;
+}
+
+section li img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+section li p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Arial;
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+    font-size: 1.9vw;
+    text-shadow: 2.5px 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+
+
+
+
+
+/************************** Etiquette **************************/
+#etiquette{
+    padding: 3% 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+#etiquette li{
+    float:left;
+    width: 16.5%;
+}
+
+#etiquette li i{
+    float: left;
+    margin-right: 20px;
+    margin-left: 25%
+}
+
+#etiquette li i:before{
+    font-size: 2vw;
+    color: #ff6600;
+}
+
+#etiquette a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: 'Arial';
+}
+
+/************************** Partenariat **************************/
+#partenariat{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#partenariat ul{
+    text-align: center;
+    padding: 25px;
+}
+
+#partenariat li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4%;
+    width: 7%;
+}
+
+#partenariat li:first-child{
+    margin-left: inherit;
+}
+
+#partenariat li img{
+    width: 100%;
+}
+
+/************************** Footer **************************/
+footer{
+    background: #59595b;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+#footer{
+    width: 1207px;
+    margin: auto;
+}
+
+#blocCentrerFooter{
+    width: 100%;
+}
+
+#votreCommande, #aideService, #aPropos, #contact{
+    margin-left: 9.3%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#votreCommande{
+    margin-left: inherit;
+}
+
+#votreCommande h4, #aideService h4, #aPropos h4, #contact h4{
+    color: #FFFFFF;
+    font-size: 0.9vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arial';
+    margin-bottom: 10px;
+}
+
+#garantiePartenaire{
+    margin-top: 15%;
+}
+
+.footer_hr{
+    border: none;
+    height: 1px;
+    width: 100px;
+    float: left;
+    background-color: white;
+}
+
+footer a{
+    text-decoration: none;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 0.8vw;
+    font-family: 'Arial';
+}
+
+/* Champs de saisi newsletter et garage partenaire */
+footer input{
+    width: 77%;
+    height: 35px;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+footer button{
+    height: 35px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.clear{
+    clear: both;
+}
+
+#newsletter button{
+    background: #ff6600;
+    color: #fff;
+}
+
+#garantiePartenaire button{
+    background: #009ac1;
+    color: #fff;
+}
+
+#rejoindre li{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#rejoindre img{
+    width: 2%;
+}
+
+.ongletActive{
+    border-bottom-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+/************************** Page Freinage **************************/
+.titre_categories{
+    width: 100%;
+    height: 165px;
+    background-color: #000;
+    margin-bottom: 30px;
+}
+
+.titre_categories h1{
+    color: #fff;
+    font-size: 4vw;
+    font-family: Arial;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#chemin a{
+    color: #000;
+    text-decoration: none;
+}
+
+#chemin a:hover{
+    text-decoration: underline;
+}
+
+#chemin{
+    font-family: Arial;
+    font-size: 1vw;
+}
+
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inputSearchCategories{
+    float: left;
+    height: 33px;
+    width: 210px;
+    padding-left: 20px;
+    outline: none;
+}
+
+#searchInputCategories{
+    float: right;
+}
+
+#searchInputCategories button{
+    background: #139bbd;
+    border: none;
+    display: inline-block;
+    float: left;
+    padding: 8px 9px;
+    outline: none;
+}
+
+.flaticon-search{
+    color: #fff;
+}
