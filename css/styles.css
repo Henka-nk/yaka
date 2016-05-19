@@ -1,0 +1,879 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+}
+
+.flaticon-arrows:before { content: "\f100"; }
+.flaticon-buildings:before { content: "\f101"; }
+.flaticon-car-compact:before { content: "\f102"; }
+.flaticon-customer-service-headset:before { content: "\f103"; }
+.flaticon-location:before { content: "\f104"; }
+.flaticon-locked-padlock:before { content: "\f105"; }
+.flaticon-phone-receiver:before { content: "\f106"; }
+.flaticon-search:before { content: "\f107"; }
+.flaticon-shopping-cart-black-shape:before { content: "\f108"; }
+.flaticon-tick:before { content: "\f109"; }
+.flaticon-travel:before { content: "\f10a"; }
+.flaticon-user-shape:before { content: "\f10b"; }
+
+
+/* Header, nav et menu */
+body{
+    font-family: Arial;
+}
+
+header{
+    height: 70px;
+    background-color: #f8f8f8;
+}
+
+/* Logo */
+h1{
+    display: inline-block;
+}
+
+.logo{
+    width: 36%;
+    margin-left: 15px;
+    margin-top: 9px;
+    display: inline-block;
+}
+
+/* Menu de navigation */
+nav{
+    display: inline-block;
+    position: absolute;
+    right: 9px;
+    top: 16px;
+}
+
+nav ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 75px;
+}
+
+nav a{
+    height: 11px;
+    font-family: Arial;
+    font-size: 0.8vw;
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.numTel{
+    font-family: Arial;
+    font-size: 0.8vw;
+    color: #59595b;
+}
+
+nav li:last-child{
+    width: 100px;
+    height: 30.5px;
+    background-color: #ff6600;
+    padding: 4px;
+}
+
+.panier{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: 7px;
+    font-size: 0.8vw;
+}
+
+.loc{
+    color: #ff6600 !important;
+}
+
+#container{
+    background: url("../img/Hero.png");
+    height: 770px;
+    background-color: #d8d8d8;
+    background-size: cover;
+    position: relative;
+}
+
+/* Texte central, vos piÃƒÆ’Ã‚Â¨ces dÃƒÆ’Ã‚Â©tachÃƒÆ’Ã‚Â©s */
+#textPresentation{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    text-align: center;
+    width: 52%;
+}
+
+#textPresentation h2{
+    font-size: 4.3vw;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    text-shadow: 1px 1.5px 12.5px rgba(0, 0, 0, 0.5);
+}
+
+#textPresentation p{
+    font-size: 1.1vw;
+    margin-top: 7px;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+    text-shadow: 1px 1.5px 12.5px rgba(0, 0, 0, 0.5);
+}
+
+/* Bloc de la recherche */
+#searchContainer{
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    width: 61%;
+    height: 7%;
+    /* margin-top: 45px; */
+}
+
+#selectionVehicule{
+    width: 49%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-right: 1px solid black;
+    float: left;
+    height: 100%;
+}
+
+#selectionVehicule div{
+    margin-top: 17px;
+    height: 25px;
+    margin-left: 40px;
+}
+
+#selectionVehicule div p{
+    font-size: 1.1vw;
+    color: #59595b;
+    padding-top: 2px;
+}
+
+#selectionVehicule div p:after{
+    content: url(../img/triangle-1.png);
+    display: inline-block;
+    margin-right: 50px;
+    float: right;
+    margin-top: -4px;
+    
+}
+
+#searchInputContainer{
+    height: 100%;
+}
+
+.inputSearch{
+    font-size: 0.9vw;
+    height: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: none;
+    float: left;
+    width: 31.8%;
+}
+
+#searchInputContainer button{
+    width: 19.2%;
+    height: 100%;
+    background: #139bbd;
+    border: none;
+}
+
+/* animation */
+#bloc_search{
+    width: 55%;
+    height: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    z-index: 1;
+    display: none;
+}
+
+#ongletSearch{
+    width: 100%;
+    height: 20%;
+}
+
+#byModele, #byImmatriculation, #byCarteGrise{
+    width: 33%;
+    height: 100%;
+    background: #ffffff;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    border-left: solid 1px #dadada;;
+    border-right: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+}
+
+#ongletSearch p{
+    margin-top: 23px;
+    font-size: 1.2vw;
+}
+
+#byCarteGrise{
+    width: 33.2%;
+}
+
+#content{
+    height: 80%;
+    position: relative;
+}
+
+#containerModel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    width: 73%;
+}
+
+#containerModel select{
+    border: 1px solid black;
+    margin-left: 15%;
+    font-size: 1.3vw;
+    width: 31%;
+    padding: 12px;
+    margin-top: 35px;
+}
+
+#typeVehicule, #typeModele{
+    margin-left: 0;
+}
+
+/* Section */
+#bloc_centrage{
+    width: 75%;
+    position: relative;
+    margin: auto;
+}
+
+section{
+    width: 100%;
+}
+
+section ul{
+    width: 100%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+section li{
+    width: 23%;
+    margin-left: 2%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+section li:first-child{
+    margin-left: inherit;
+}
+
+section li img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+section li p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: TranslateY(-50%) TranslateX(-50%);
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Arial;
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+    font-size: 1.9vw;
+    text-shadow: 2.5px 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+/* Pub */
+.ligneSeparateur{
+    margin-top: 60px;
+    margin-bottom: 35px;
+    width: 35%;
+}
+
+.pubTitles{
+    color: orange;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+#pub{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#pub1{
+    margin-right: 1%;
+    width: 60.2%;
+    display: inline-block;
+}
+
+#pub2{
+    width: 37.6%;
+    display: inline-block;
+}
+
+#pub img{
+    width: 100%;
+}
+
+/* etiquette */
+#etiquette{
+    padding: 3% 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+#etiquette li{
+    float:left;
+    width: 16.5%;
+}
+
+#etiquette li i{
+    float: left;
+    margin-right: 20px;
+    margin-left: 25%
+}
+
+#etiquette li i:before{
+    font-size: 2vw;
+    color: #ff6600;
+}
+
+#etiquette a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+/* partenariat */
+#partenariat{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#partenariat ul{
+    text-align: center;
+    padding: 25px;
+}
+
+#partenariat li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4%;
+    width: 7%;
+}
+
+#partenariat li:first-child{
+    margin-left: inherit;
+}
+
+#partenariat li img{
+    width: 100%;
+}
+
+/* footer */
+footer{
+    background: #59595b;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+#blocCentrerFooter{
+    width: 100%;
+    /* margin: auto; */
+}
+
+#votreCommande, #aideService, #aPropos, #contact{
+    margin-left: 9.3%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#votreCommande h4, #aideService h4, #aPropos h4, #contact h4{
+    color: #FFFFFF;
+    font-size: 0.9vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#votreCommande:first-child{
+    /* margin-left: 12.4%; */
+}
+
+#garantiePartenaire{
+    margin-top: 15%;
+}
+
+.footer_hr{
+    border: none;
+    height: 1px;
+    width: 100px;
+    float: left;
+    background-color: white;
+}
+
+footer a{
+    text-decoration: none;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 0.8vw;
+}
+
+footer input{
+    width: 77%;
+    height: 35px;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+footer button{
+    height: 35px;
+    border: none;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.clear{
+    clear: both;
+}
+
+#newsletter button{
+    background: #ff6600;
+    color: #fff;
+}
+
+#garantiePartenaire button{
+    background: #009ac1;
+    color: #fff;
+}
+
+#rejoindre li{
+    display: inline-block;
+}
+
+
+/*freinage*/
+
+.titre_categories{
+    width: 100%;
+    height: 165px;
+    margin-bottom: 30px;
+    background-image: url(../img/freinage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 28%;
+}
+
+.titre_categories h1{
+    color: #fff;
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#chemin a,
+.column a,
+.recherche_categorie_gauche a{
+    color: #000;
+    text-decoration: none;
+}
+
+#chemin a:hover,
+.column a:hover{
+    text-decoration: underline;
+}
+
+#chemin{
+    font-size: 1vw;
+}
+
+.center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.inputSearchCategories{
+    float: left;
+    height: 33px;
+    width: 210px;
+    padding-left: 20px;
+    outline: none;
+}
+
+#searchInputCategories{
+    float: right;
+    margin-top: -20px;
+}
+
+#searchInputCategories button{
+    background: #139bbd;
+    border: none;
+    display: inline-block;
+    float: left;
+    padding: 8px 9px;
+    outline: none;
+}
+
+.flaticon-shopping-cart-black-shape{
+    color: #fff;
+}
+
+.sous_categories{
+    overflow: hidden;
+}
+
+.column{
+    width: 25%;
+    float: left;
+    margin-left: 11%;
+}
+
+.column:first-child{
+    margin-left: 3% !important;
+}
+
+.title_categ{
+    font-weight: bold;
+    line-height: 30px;
+    /*border-bottom: 1px solid #000;*/
+    width: 100%;
+    display: block;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.sous_categories_gras ul{
+    /*border-bottom: 1px solid #000;*/
+}
+
+.title_categ:hover{
+    background-color: #333;   
+    color: #fff !important;
+}
+
+.recherche_categorie_gauche{
+    margin-top: 100px;
+    width: 21%;
+    float: left;
+    /*border: 1px solid #000;*/
+}
+
+.title_categ{
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #000 !important;
+    margin-left: 0px !important;
+    text-decoration: none !important;
+}
+
+.sous_categories_gras:last-child .title_categ{
+    border: none;
+}
+
+.recherche_categorie_gauche a{
+    font-size: 0.9vw;
+    color: #999;
+    margin-left: 30px;
+    line-height: 3vw;
+}
+
+.recherche_categorie_gauche a:hover{
+    text-decoration: underline;
+}
+
+#content_categories{
+    overflow: hidden;
+}
+
+.content_categorie{
+    margin-top: 80px;
+    width: 75%;
+    float: right;
+    overflow: hidden;
+}
+
+.none{
+    display: none;
+}
+
+.filtres_recherche{
+    border: 1px solid #000;
+    width: 150px;
+    text-align: center;
+    color: #000;
+    display: block;
+    height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: bold;
+    float: left;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+.popup{
+    border: 1px solid #000;
+    display: inline-block;
+    float: left;
+    width: 80%;
+    margin-top: -1px;
+}
+
+.popup li{
+    font-size: 1.3vw;
+    color: #000;
+    background-color: #E7E7E7;
+    padding: 5px 15px;
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.popup li:hover{
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#result{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.products hr{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    border: none;
+    margin: 50px auto;
+}
+
+.img_product{
+    width: 20%;
+    float: left;
+}
+
+.img_product img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.info_product{
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.price_product{
+    width: 30%;
+    float: left;
+}
+
+.bold_marque{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+}
+
+.ref{
+    color: #999;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.caracteristics{
+    clear: both;
+    display: block;
+    margin-top: 30px;
+}
+
+.caracteristics li{
+    font-size: 0.9vw;
+    background-color: #E7E7E7;
+    padding: 10px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+.grey{
+    background-color: #F7F7F7 !important;
+}
+
+.flaticon-location{
+    color: #139BBD;
+    font-size: 10px !important;
+    margin-right: 10px;
+}
+
+.garage{
+    color: #139BBD;
+    font-size: 1vw;
+    float: left;
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.fiche{
+    color: #000;
+    text-decoration: underline;
+    font-size: 0.9vw;
+    float: left;
+    line-height: 20px;
+    margin-left: 10px;
+
+}
+
+.price{
+    width: 80%;
+    background-color: #F4F4F4;
+    text-align: center;
+    display: block;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: -20px;
+}
+
+.price_orange{
+    color: #FF6600;
+    font-size: 2.8vw;
+    display: block;
+    font-weight: bold;
+}
+
+.old_price{
+    text-decoration: line-through;
+}
+
+.garantie{
+    margin-top: 15px;
+}
+
+.stock_icon{
+    color: #17BD13;
+    margin-right: 10px;
+    font-size: 10px !important;
+    margin-top: 5px;
+}
+
+.stock{
+    color: #17BD13;
+    font-size: 1.1vw;
+    margin-top: 5px;
+}
+
+.flaticon-search{
+    color: #139BBD;
+    margin-right: 10px;
+}
+
+.sale{
+    color: #139BBD;
+    font-size: 1.1vw;
+}
+
+.flaticon-tick{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.saveto{
+    color: #fff;
+    background-color: #FF6600;
+    width: 80%;
+    display: inline-block;
+    margin: 15px 0px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plus{
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #FF6600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+
+.all_products{
+    overflow: hidden;
+}
+
+.footer_freinage{
+    margin-top: 50px;
+}
+
+#pub1{
+    width: 60%;
+}
+
+#pub2{
+    width: 37,5%;
+}
+
+#rejoindre img{
+    width: 10%;
+    display: block;
+}
+
+#rejoindre li{
+    display: block;
+}
+
+

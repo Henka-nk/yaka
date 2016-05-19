@@ -1,0 +1,163 @@
+@media screen and (min-width: 400px) and (max-width: 670px){
+	.saveto{
+		font-size: 1.9vw;
+	}
+
+	.price_orange {
+	    font-size: 3.5vw;
+	    margin-top: -10px;
+	}
+
+	.old_price {
+	    font-size: 1.8vw;
+	    line-height: 30px;
+	}
+
+	.price{
+		height: 60px;
+	}
+
+	.caracteristics li {
+	    padding: 10px;
+	    margin-top: 0px;
+	    width: 68%;
+	   	}
+
+   	.garage {
+	    margin-bottom: 40px;
+	}
+
+	#chemin{
+		display: none;
+	}
+
+	#searchInputCategories {
+	    margin: 0px;
+	    float: none;
+	}
+
+	.inputSearchCategories{
+	    width: 80%;
+	}
+
+	.recherche_categorie_gauche{
+		display: none;
+	}
+
+	.content_categorie{
+		width: 100%;
+	}
+
+	.filtres_recherche{
+		width: 50%;
+		font-size: 3vw;
+	}
+
+	.content_categorie{
+		margin-top: 40px;
+	}
+
+	.titre_categories h1{
+		font-size: 8vw;
+	}
+
+	.bold_marque{
+		font-size: 2.7vw;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px){
+	.info_product,
+	.garantie,
+	.recherche_categorie_gauche,
+	#chemin,
+	#votreCommande,
+	#aideService,
+	#aPropos,
+	#newsletter,
+	#garantiePartenaire
+	{
+		display: none;
+	}
+
+	.titre_categories h1{
+		font-size: 8vw;
+	}
+
+	.inputSearchCategories{
+	    width: 78%;
+	    margin-bottom: 20px;
+	}
+
+	#searchInputCategories{
+		float: none;
+	}
+
+	.filtres_recherche{
+		width: 50%;
+		font-size: 3vw;
+	}
+
+	.content_categorie{
+		float: none;
+		width: 100%;
+	}
+
+	.img_product,
+	.saveto{
+		width: 100%;
+	}
+
+	.price_product {
+	    width: 100%;
+	    float: left;
+	}
+
+	.price{
+		width: 100%;
+	}
+
+	.price_orange{
+		font-size: 10.8vw;
+		line-height: 45px;
+	}
+
+	.saveto{
+		margin-top: 5px;
+	}
+
+	#result{
+		text-align: center;
+	}
+
+	#rejoindre img{
+		width: 75%;
+		display: block;
+	}
+
+	#rejoindre li{
+		float: left;
+		display: block;
+		width: 15%;
+	}
+
+	#rejoindre ul{
+		width: 160%;
+		margin: 0 auto;
+	}
+
+
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
